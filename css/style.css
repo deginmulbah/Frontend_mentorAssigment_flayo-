@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+/* general styling */
+p{
+    font-weight: 400;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+h4{
+    font-size: 21px;
+    font-weight: 700;
+}
+/* email form */
+
+form  input[type='text']{
+    width: 50%;
+    padding: 10px;
+    border:1px solid hsl(0, 0%, 75%);
+    outline: none;
+    border-radius: 0px;
+}  
+form input[type='button']{
+    width: 30%;
+    margin-left: 10px;
+    padding: 10px ;
+    background-color:  hsl(224, 93%, 58%);
+    border:none ;
+    color: #fff;
+    border-radius: 0px;
+    text-transform: capitalize;
+} 
+/* responsive  styling */
+
+/* Desktop  screen */
+@media (max-width: 764px){
+    form input[type='button']{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    form  input[type='text']{
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 764px){
+    form input[type='button']{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    form  input[type='text']{
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* style the nav bar */
+.navbar{
+    background-color:transparent;
+}
+.navbar .navbar-brand img{
+    width: 100px;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color:  hsl(238, 22%, 44%);
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:  hsl(238, 22%, 44%);
+    font-size: 20px;
+    padding: 2.3em;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:hsl(238, 22%, 64%);
+}
+section{
+    width: 100%;
+    min-height: 40vh;
+    padding: 150px 0px 150px 0em;
+}
+
+/* hero section */
+
+.hero_area .hero_heading{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    line-break: initial;
+}
+.hero_area .hero_heading p{
+    font-size: 13px;
+}
+/* responsive  styling */
+@media (min-width: 768px){
+    .hero_area .hero_heading{
+        /* padding: 30px 0 30px 0; */
+        text-align: left;
+    }
+    .hero_area .hero_form{
+        width: 100%;
+    }
+    .info-section{
+     text-align: left;
+    }
+
+}
+/* Desktop  screen */
+
+/* info section */
+.info-section{
+    /* background-image: url('../images/bg-curve-mobile.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-text p{
+  font-size: 14px;
+}
+
+.info-text .work-link a{
+    font-size: 18px;
+    color:  hsl(170, 45%, 43%);
+    border-bottom: 2px solid ;
+    text-decoration: none;
+  }
+  /* quote-container div */
+  .quote-container{
+      background-color: #fff;
+      margin-top: 10px;
+      padding: 29px;
+      border-radius: 4px;
+      -webkit-box-shadow: 2px 7px 18px 6px  hsl(0, 0%, 75%);
+      -moz-box-shadow: 2px 7px 18px 6px  hsl(0, 0%, 75%);
+      box-shadow: 2px 7px 18px 6px  hsl(0, 0%, 75%); 
+     }
+
+  .person_quoted .avatar img{
+     border-radius: 50%;
+     width: 70px;
+   
+  }
+  .person_quoted .title h5{
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .person_quoted .title p{
+      font-size: 14px;
+      text-transform: capitalize;
+  }
+
+  /* get access area */
+  .get-access-area{
+    background-color: hsl(238, 22%, 44%);
+    text-align: center;
+  }
+  @media (min-width: 768px){
+    .get-access-area{
+        /* padding: 30px 0 30px 0; */
+        text-align: left;
+    }
+}
+.get-access-area .get-access-text{
+    color: #fff;
+}
+footer{
+    width: 100%;
+    min-height: 40vh;
+    padding: 2.5em 0px 2em 0em;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+}
+footer .footer_info {
+  padding: 10px;
+}
+footer .footer_about ul, 
+footer .footer_terms ul{
+    list-style-type: none;
+}
+footer .footer_about ul li  ,
+footer .footer_terms ul li {
+    padding: 10px;
+}
+footer .footer_about ul li a ,
+footer .footer_terms ul li a{
+    color: #fff;
+    padding: 20px;
+}
+footer .social-icon ul li {
+    display: inline;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+
